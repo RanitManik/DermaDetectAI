@@ -1,163 +1,124 @@
-<div align="center">
-  <img height="80px" src="https://skillicons.dev/icons?i=md" alt="Markdown Icon">
-  <h1>README Template</h1>
-  <a href="https://github.com/RanitManik/Project-Starter-Template/wiki"><strong>Explore the docs »</strong></a>
-  <br>
-  <br>
-  <a href="https://github.com/RanitManik/Project-Starter-Template">View Demo</a>
-  ·
-  <a href=".github/ISSUE_TEMPLATE/bug_report.md">Report Bug</a>
-  ·
-  <a href=".github/ISSUE_TEMPLATE/feature_request.md">Request Feature</a>
-  <br/>
-  <br/>
+# DermaDetectAI
 
-![GitHub Created At](https://img.shields.io/github/created-at/RanitManik/Project-Starter-Template)
-![GitHub License](https://img.shields.io/github/license/RanitManik/Project-Starter-Template)
-![GitHub repo size](https://img.shields.io/github/repo-size/RanitManik/Project-Starter-Template)
-![GitHub Discussions](https://img.shields.io/github/discussions/RanitManik/Project-Starter-Template)
-![GitHub Release](https://img.shields.io/github/v/release/RanitManik/Project-Starter-Template)
-
-</div>
-
-A well-crafted project starter template containing all the essential community standards to assist you in launching your projects successfully and ensuring they meet the expected quality levels. Read the **[Wiki Docs](https://github.com/RanitManik/Project-Starter-Template/wiki)** to learn more about this project and its structure. Ask questions about this project in the **[Discussion](https://github.com/RanitManik/Project-Starter-Template/discussions)**.
+DermaDetectAI is a Flask-based application developed to detect various skin diseases using deep learning models. This
+project was created as part of a college initiative by **Ranit Kumar Manik**, **Mohammad**, **Sayak Bal**, and **Partha
+Sarathi Manna**. It features three distinct models, each trained on different datasets to identify 5, 10, and 23 skin
+diseases, respectively.
 
 ## Table of Contents
 
-- [Overview](#overview)
-    - [Why This Template?](#why-this-template)
-    - [What to Change?](#what-to-change)
-    - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-- [Usage](#usage)
+- [Pre-trained Models](#pre-trained-models)
+- [Setup Instructions](#setup-instructions)
+    - [Install Dependencies](#install-dependencies)
+    - [Running the Application](#running-the-application)
+- [Using the Pre-trained Models](#using-the-pre-trained-models)
+- [Training the Models](#training-the-models)
+- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
 
-## Overview
+## Pre-trained Models
 
-![Project-Starter-Template](https://repository-images.githubusercontent.com/815239689/dac4f581-9ce1-42cc-b271-ab7b12292b1f)
+The repository includes pre-trained models for skin disease detection:
 
-### Why This Template?
+1. **Model 1**: Detects 5 diseases. Trained on a ~69MB dataset with 98% validation accuracy.
+2. **Model 2**: Detects 10 diseases. Trained on a ~2GB dataset with 85% validation accuracy.
+3. **Model 3**: Detects 23 diseases. Trained on a ~6GB dataset with 45% validation accuracy.
 
-Your time is valuable and should be focused on building amazing projects that solve problems and help others. This template is designed to streamline the process of setting up a new project so you can adhere to DRY (Don't Repeat Yourself) principles even in your documentation efforts. Here's why this template stands out:
+## Setup Instructions
 
-- **Efficiency**: Save time by using a pre-structured template.
-- **Focus**: Spend more time on developing your project rather than setting up from scratch.
-- **Versatility**: This template aims to be as versatile as possible to fit various projects.
+### Install Dependencies
 
-This template will evolve to better meet various needs. Feel free to suggest changes by forking this repo, creating a pull request, or opening an issue. Contributions are always welcome!
+Each model has its own `requirements.txt` file. To install the dependencies for a specific model, navigate to the
+respective model directory and run:
 
-> [!IMPORTANT]
-> For comprehensive insights into this project, we strongly recommend visiting **[our project's wiki page](https://github.com/RanitManik/Project-Starter-Template/wiki)**.
-> The [home page](https://github.com/RanitManik/Project-Starter-Template/wiki) provides an overview of the project, while the [Project Structure page](https://github.com/RanitManik/Project-Starter-Template/wiki/Project-Structure) details the purpose and contents of each file and folder in the project structure.
-
-> [!Note]
-> This README provides detailed examples and information. For a clean template format, consider using the **[README_TEMPLATE.md](README_TEMPLATE.md)** file as your README. We recommend reviewing the guide on making changes in this README to ensure you cover all necessary aspects effectively.
-
-### What to Change?
-
-- **Project name** and **Project description**
-- **Project logo** and **Project Screenshot**
-- **Project overview:** Update the [overview](#overview)
-- **Project tech stack:** Update the [technologies used](#technologies-used) badges according to your project tech stack
-  from **[Markdown Badges](https://github.com/Ileriayo/markdown-badges)** if you want to change the badges. There you will
-  find various markdown badges for your personal developer branding, profile, and projects.
-- **Project badges:** Update the badges from **shields.io** at the top of the README by changing the profile name and repo
-  name.
-  If you want to add more badges like this, visit **[shields.io](https://shields.io/badges)**
-- **Installation steps:** Update the [installation instructions](#installation) in this template
-- **Usage instructions:** Update the [usage instructions](#usage) in this template
-- Contribution guidelines: Update the repo name in [contribution guidelines](#contributing) in this template and
-  in [CONTRIBUTING.md](.github/CONTRIBUTING.md)
-- **License information:** If you prefer a different license, update it here [LICENSE](LICENSE)
-- **Contact details:** Update the contact info in this template with your details in [contact section](#contact)
-
-### Technologies Used
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps. 
-Provide instructions and examples for using the project. 
-This template does not rely on any external dependencies or services.
-
-### Prerequisites
-
-Ensure you have the following software installed:
-
-- `Node.js` and `npm`
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/RanitManik/Project-Starter-Template.git
-   ```
-2. Navigate to the project directory
-   ```sh
-   cd Project-Starter-Template
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-## Usage
-
-- To run the app run the following command:
-
-```sh
-npm start
+```bash
+pip install -r requirements.txt
 ```
+
+### Running the Application
+
+To start the Flask application for a specific model, navigate to its directory and execute:
+
+```bash
+python app.py
+```
+
+The Flask server will start, and you can access the application at `http://127.0.0.1:5000`. Use the web interface to
+upload an image and receive disease predictions.
+
+## Using the Pre-trained Models
+
+The pre-trained models are included in the repository, allowing you to use them directly without additional training.
+
+## Training the Models
+
+To train the models from scratch, navigate to the `src` directory of the respective model and run `main.py`. Make sure
+you have the dataset in the appropriate directory and adjust the `num_classes` parameter according to your dataset's
+number of classes.
+
+```bash
+python src/main.py
+```
+
+> [!NOTE]
+> This project is configured to leverage NVIDIA GPUs for accelerated training and inference. Ensure that you have the
+> appropriate NVIDIA drivers and CUDA toolkit installed on your system. For detailed GPU setup instructions, refer to
+> the [CUDA Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide).
+
+## Project Structure
+
+Here’s an overview of the project structure:
+
+```
+DermaDetectAI/
+├── LICENSE
+├── README.md
+├── model-X/
+│   ├── app.py
+│   ├── models/
+│   │   └── skin_disease_model.pth
+│   ├── requirements.txt
+│   ├── src/
+│   │   └── main.py
+│   ├── templates/
+│   │   ├── result.html
+│   │   └── upload.html
+│   └── uploads/
+│       └── [user_uploaded_files]
+└── [other_files_and_directories]
+```
+
+For more details, refer to the [Project Structure Documentation](docs/project structure.md).
 
 ## Contributing
 
-We welcome contributions from all developers and power users! To add new features or suggest improvements, follow these
-steps:
+We welcome contributions to this project! To contribute, please follow these steps:
 
-1. Fork this repository to your own GitHub account.
-2. Clone the forked repository to your local machine.
-3. Create a new branch for your changes: `git checkout -b feature/add-new-feature`
-4. Make your changes to the `README.md` file or add new files as necessary.
-5. Commit your changes: `git commit -m "Add new feature for XYZ"`
-6. Push the changes to your GitHub fork: `git push origin feature/add-new-feature`
-7. Open a pull request from your forked repository to this original repository.
+1. **Fork the repository**: Click the "Fork" button at the top right of this page to create a copy of the repository
+   under your GitHub account.
+2. **Clone the repository**: Clone your forked repository to your local machine:
+    ```bash
+    git clone https://github.com/RanitManik/DermaDetectAI.git
+    ```
+3. **Create a new branch**: Create a new branch for your feature or bug fix:
+    ```bash
+    git checkout -b feature-or-bugfix-name
+    ```
+4. **Make your changes**: Implement your changes to the codebase.
+5. **Commit your changes**: Commit your changes with a descriptive message:
+    ```bash
+    git commit -m "Description of your changes"
+    ```
+6. **Push to your branch**: Push your changes to your forked repository:
+    ```bash
+    git push origin feature-or-bugfix-name
+    ```
+7. **Create a Pull Request**: Open a pull request from your forked repository’s branch to the `main` branch of the
+   original repository.
 
-Our community will review your contribution, provide feedback if needed, and merge it once everything looks good.
-<br/>
-To learn more about how to contribute, please refer to the **[Contribution Guidelines](.github/CONTRIBUTING.md)**.
+For detailed contribution guidelines, please refer to the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file.
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE.txt`](LICENSE) for more information.
-
-## Contact
-
-- **Email**: [ranitmanik.dev@gmail.com](mailto:ranitmanik.dev@gmail.com)
-- **LinkedIn**: [Ranit Manik](https://www.linkedin.com/in/ranit-manik/)
-- **GitHub**: [RanitManik](https://github.com/RanitManik)
-
-_Feel free to reach out if you have questions or just want to chat about web adventures!_
-
-## Acknowledgments
-
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-- [Markdown Badges](https://github.com/Ileriayo/markdown-badges)
-- [shields.io Badges](https://shields.io/)
-- [Skill Icons](https://github.com/tandpfun/skill-icons)
-
----
-
-<p align="center">
-   Thank you for using the <strong>Project Starter Template</strong>! Happy coding! 🚀
-</p>
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

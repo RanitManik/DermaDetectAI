@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prediction Result</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: hsla(0, 100%, 50%, 1);
+        background-image: radial-gradient(
+            at 40% 20%,
+            hsla(28, 100%, 74%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 80% 0%,
+            hsla(189, 100%, 56%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 0% 50%,
+            hsla(355, 100%, 93%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 80% 50%,
+            hsla(340, 100%, 76%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 0% 100%,
+            hsla(22, 100%, 77%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 80% 100%,
+            hsla(242, 100%, 70%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 0% 0%,
+            hsla(343, 100%, 76%, 1) 0px,
+            transparent 50%
+          );
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      li {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
+      .result-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+      }
+
+      .prediction-result {
+        font-size: 1.5em;
+        color: #333;
+      }
+
+      .prediction-link {
+        font-size: 1em;
+        color: #007bff;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+
+      .prediction-link:hover {
+        text-decoration: underline;
+      }
+
+      a.upload-link {
+        padding: 1rem 2rem;
+        background-color: #0056b3;
+        font-size: 1.15rem;
+        color: aliceblue;
+        border-radius: 2rem;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+      span {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Available Diseases to Predict</h1>
+    <ul>
+        <li>Acne and Rosacea</li>
+        <li>Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions</li>
+        <li>Atopic Dermatitis</li>
+        <li>Bullous Disease</li>
+        <li>Cellulitis Impetigo and other Bacterial Infections</li>
+        <li>Eczema</li>
+        <li>Exanthems and Drug Eruptions</li>
+        <li>Hair Loss Alopecia and other Hair Diseases</li>
+        <li>Herpes HPV and other STDs</li>
+        <li>Light Diseases and Disorders of Pigmentation</li>
+        <li>Lupus and other Connective Tissue diseases</li>
+        <li>Melanoma Skin Cancer Nevi and Moles</li>
+        <li>Nail Fungus and other Nail Disease</li>
+        <li>Poison Ivy and other Contact Dermatitis</li>
+        <li>Psoriasis Lichen Planus and related diseases</li>
+        <li>Scabies Lyme Disease and other Infestations and Bites</li>
+        <li>Seborrheic Keratoses and other Benign Tumors</li>
+        <li>Systemic Disease</li>
+        <li>Tinea Ringworm Candidiasis and other Fungal Infections</li>
+        <li>Urticaria Hives</li>
+        <li>Vascular Tumors</li>
+        <li>Vasculitis</li>
+        <li>Warts Molluscum and other Viral Infections</li>
+      </ul>      
+
+    <div class="result-container">
+      <h1>Prediction Result</h1>
+      <p class="prediction-result">
+        Predicted Skin Disease: <span>{{ prediction }}</span>
+      </p>
+      <a
+        class="prediction-link"
+        href="https://en.wikipedia.org/wiki/{{ prediction }}"
+        target="_blank"
+        >Learn more about {{ prediction }} on Wikipedia</a
+      >
+    </div>
+
+    <a class="upload-link" href="/">Upload another image</a>
+  </body>
+</html>
