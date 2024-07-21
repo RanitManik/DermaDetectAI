@@ -1,9 +1,6 @@
 # DermaDetectAI
 
-DermaDetectAI is a Flask-based application developed to detect various skin diseases using deep learning models. This
-project was created as part of a college initiative by **Ranit Kumar Manik**, **Mohammad**, **Sayak Bal**, and **Partha
-Sarathi Manna**. It features three distinct models, each trained on different datasets to identify 5, 10, and 23 skin
-diseases, respectively.
+DermaDetectAI is a Flask-based application developed to detect various skin diseases using deep learning models. This project was created as part of a college initiative by **Ranit Kumar Manik**, **Mohammad**, **Sayak Bal**, and **Partha Sarathi Manna**. It features three distinct models, each trained on different datasets using PyTorch to identify 5, 10, and 23 skin diseases, respectively.
 
 ## Table of Contents
 
@@ -29,8 +26,7 @@ The repository includes pre-trained models for skin disease detection:
 
 ### Install Dependencies
 
-Each model has its own `requirements.txt` file. To install the dependencies for a specific model, navigate to the
-respective model directory and run:
+Each model has its own `requirements.txt` file. To install the dependencies for a specific model, navigate to the respective model directory and run:
 
 ```bash
 pip install -r requirements.txt
@@ -44,8 +40,7 @@ To start the Flask application for a specific model, navigate to its directory a
 python app.py
 ```
 
-The Flask server will start, and you can access the application at `http://127.0.0.1:5000`. Use the web interface to
-upload an image and receive disease predictions.
+The Flask server will start, and you can access the application at `http://127.0.0.1:5000`. Use the web interface to upload an image and receive disease predictions.
 
 ## Using the Pre-trained Models
 
@@ -53,18 +48,15 @@ The pre-trained models are included in the repository, allowing you to use them 
 
 ## Training the Models
 
-To train the models from scratch, navigate to the `src` directory of the respective model and run `main.py`. Make sure
-you have the dataset in the appropriate directory and adjust the `num_classes` parameter according to your dataset's
-number of classes.
+To train the models from scratch, navigate to the `src` directory of the respective model and run `main.py`. Ensure that you have the dataset in the appropriate directory and adjust the `num_classes` parameter according to your dataset's number of classes.
 
 ```bash
 python src/main.py
 ```
 
 > [!NOTE]
-> This project is configured to leverage NVIDIA GPUs for accelerated training and inference. Ensure that you have the
-> appropriate NVIDIA drivers and CUDA toolkit installed on your system. For detailed GPU setup instructions, refer to
-> the [CUDA Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide).
+>  This project is configured to utilize NVIDIA GPUs for faster training and inference. Make sure you have the necessary NVIDIA drivers, CUDA toolkit, and the GPU version of PyTorch installed. <br/>
+> For GPU setup instructions, refer to the [CUDA Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide). For PyTorch installation guidance, visit the [PyTorch Installation Page](https://pytorch.org/get-started/locally/).
 
 ## Project Structure
 
@@ -89,14 +81,13 @@ DermaDetectAI/
 └── [other_files_and_directories]
 ```
 
-For more details, refer to the [Project Structure Documentation](docs/project structure.md).
+For more details, refer to the [Project Structure Documentation](docs/project_structure.md).
 
 ## Contributing
 
 We welcome contributions to this project! To contribute, please follow these steps:
 
-1. **Fork the repository**: Click the "Fork" button at the top right of this page to create a copy of the repository
-   under your GitHub account.
+1. **Fork the repository**: Click the "Fork" button at the top right of this page to create a copy of the repository under your GitHub account.
 2. **Clone the repository**: Clone your forked repository to your local machine:
     ```bash
     git clone https://github.com/RanitManik/DermaDetectAI.git
@@ -114,8 +105,7 @@ We welcome contributions to this project! To contribute, please follow these ste
     ```bash
     git push origin feature-or-bugfix-name
     ```
-7. **Create a Pull Request**: Open a pull request from your forked repository’s branch to the `main` branch of the
-   original repository.
+7. **Create a Pull Request**: Open a pull request from your forked repository’s branch to the `main` branch of the original repository.
 
 For detailed contribution guidelines, please refer to the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file.
 
