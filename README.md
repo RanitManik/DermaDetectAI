@@ -1,5 +1,11 @@
 # DermaDetectAI
 
+![GitHub Created At](https://img.shields.io/github/created-at/RanitManik/DermaDetectAI)
+![GitHub repo size](https://img.shields.io/github/repo-size/RanitManik/DermaDetectAI)
+![GitHub Discussions](https://img.shields.io/github/discussions/RanitManik/DermaDetectAI)
+![GitHub License](https://img.shields.io/github/license/RanitManik/DermaDetectAI)
+![wakatime](https://wakatime.com/badge/github/RanitManik/DermaDetectAI.svg)
+
 DermaDetectAI is a Flask-based application developed to detect various skin diseases using deep learning models. This project was created as part of a college initiative by **Ranit Kumar Manik**, **Mohammad**, **Sayak Bal**, and **Partha Sarathi Manna**. It features three distinct models, each trained on different datasets using PyTorch to identify 5, 10, and 23 skin diseases, respectively.
 
 ## Table of Contents
