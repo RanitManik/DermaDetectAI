@@ -87,7 +87,7 @@ DermaDetectAI/
 └── [other_files_and_directories]
 ```
 
-For more details, refer to the [Project Structure Documentation](docs/project_structure.md).
+For more details, refer to the [Project Structure Documentation](docs/project%20structure.md).
 
 ## Contributing
 
